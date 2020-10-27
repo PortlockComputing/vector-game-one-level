@@ -5,7 +5,7 @@
         "tilemapTile": true
     },
     "tile1": {
-        "data": "hwQQABAAAAD///////////8R8RERHxH/HxHxEREfEfEfEfERER/x8R8R8RERHx/xHxHx//8fEfEfEfERER8R8R8R8RERHxHx////EREfEfEfEfERH////x8R8fEfHxHxHxHx8REfEfEfEfERER8R8f8R8RERHxHx////EREfEf///////////w==",
+        "data": "hwQQABAAAAD////////////d/d3d393/39393d3f3f3f3f3d3d/9/d/d/d3d39/93939///f3f3f3f3d3d/d/d/d/d3d3939////3d3f3f3f3f3d3////9/d/f3f39393939/d3f3f3f3f3d3d/d/f/d/d3d3939////3d3f3f///////////w==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
@@ -26,6 +26,26 @@
     },
     "tile5": {
         "data": "hwQQABAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVQ==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile6": {
+        "data": "hwQQABAAAAAAAAAAAAAAAADgAAEA7uAAAA4QEAAOAAEAAAHQ4QAQABAAAd0BAAEQAAEBAAEQEBEAARAQAAAAEAAQEAEAARERABEBABABABAAEBABAAEREQABEBAAAAAQAAEBAAEQEBEQAAHdAQABEAAAAdDhABAAAA4QEAAOAAEA4AABAO7gAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile7": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8BQNAAAAAEDxQREAAAAAEP8REQAAAABA8R1EAAAAAADwFA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile8": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAPAREREAAADw//8P0AAAAN/4EfEAAADw+P/YHQ8AAPDd/dgdDwAA8Nj/iB0PAAAA3/gR8QAAAADw//8PEAAAAADwERERAAAAAAAAANAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile9": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAADw3Q8AAADwDy/dDwAAAP//H/L/DwDw/939ERH/APDf/d+/+7IP8N/d3S/78g/w/93dL7Ei+/D//d8f8Sv7AP/d/RERSw8A8P8v8v//AAAAAE/S/QAAAAAA8NT9AAAAAAAA//8AAA==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },

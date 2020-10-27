@@ -2,6 +2,24 @@ namespace SpriteKind {
     export const theExit = SpriteKind.create()
     export const jewel = SpriteKind.create()
 }
+function cleanUpGame () {
+    info.setScore(0)
+    info.setLife(0)
+    jewelsScore = 0
+    theHero.destroy()
+    enemyList = sprites.allOfKind(SpriteKind.Enemy)
+    for (let value of enemyList) {
+        value.destroy()
+    }
+    projectileList = sprites.allOfKind(SpriteKind.Projectile)
+    for (let value of projectileList) {
+        value.destroy()
+    }
+    jewelList = sprites.allOfKind(SpriteKind.jewel)
+    for (let value of jewelList) {
+        value.destroy()
+    }
+}
 function themeTune () {
     music.playTone(392, music.beat(BeatFraction.Quarter))
     music.playTone(392, music.beat(BeatFraction.Quarter))
@@ -13,15 +31,6 @@ function themeTune () {
     music.playTone(294, music.beat(BeatFraction.Quarter))
     music.playTone(523, music.beat(BeatFraction.Whole))
     music.playTone(392, music.beat(BeatFraction.Half))
-    music.playTone(349, music.beat(BeatFraction.Quarter))
-    music.playTone(330, music.beat(BeatFraction.Quarter))
-    music.playTone(294, music.beat(BeatFraction.Quarter))
-    music.playTone(523, music.beat(BeatFraction.Whole))
-    music.playTone(392, music.beat(BeatFraction.Half))
-    music.playTone(349, music.beat(BeatFraction.Quarter))
-    music.playTone(330, music.beat(BeatFraction.Quarter))
-    music.playTone(349, music.beat(BeatFraction.Quarter))
-    music.playTone(294, music.beat(BeatFraction.Whole))
 }
 function mainOnStart () {
     theHero = sprites.create(img`
@@ -639,7 +648,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, ot
     music.wawawawaa.play()
     game.splash("You got killed ", "by a passing spaceship!")
     game.splash("Press 'A' to try again.")
-    game.reset()
+    cleanUpGame()
+    mainOnStart()
 })
 controller.A.onEvent(ControllerButtonEvent.Repeated, function () {
     theHero.vy = -50
@@ -662,15 +672,19 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     music.wawawawaa.play()
     game.splash("You got killed..", "by a Flower!")
     game.splash("Press 'A' to try again.")
-    game.reset()
+    cleanUpGame()
+    mainOnStart()
 })
 let spaceShip: Sprite = null
 let spaceShipSpeed = 0
 let jewels: Sprite = null
 let theExit: Sprite = null
 let evilFlower: Sprite = null
-let jewelsScore = 0
+let jewelList: Sprite[] = []
+let projectileList: Sprite[] = []
+let enemyList: Sprite[] = []
 let theHero: Sprite = null
+let jewelsScore = 0
 scene.setBackgroundImage(img`
     ................................................................................................................................................................
     ................................................................................................................................................................
